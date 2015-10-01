@@ -1,1 +1,1 @@
-Add your AWS API credentials for each AWS account into files in this folder. 
+Add your settings for each AWS account into files in this folder. 

@@ -13,8 +13,13 @@ Setup
 5. Source the `bash-complete.sh` file from your `.bash_profile` to enable autocomplete
 6. Ensure you have the corresponding SSH private key in your `~/.ssh` folder that matches with the key listed on each EC2
 
-Usage
+Usage 
 -----
+
+**Run `./rebuild-ssh-config.sh profile1 profile2 ...`**
+
+Usage step by step
+------------------
 
 **Run `bundle exec ./ssh-servers-from-aws.rb example`**
 
