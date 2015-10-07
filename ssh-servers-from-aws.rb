@@ -36,12 +36,12 @@ regions.each do |region|
   ec2 = Aws::EC2::Client.new()
 
   reservations = ec2.describe_instances(  
-      {
-        filters: [
+    {
+      filters: [
         {
           name: "instance-state-name",
           values: ["running"]
-        },
+        }
       ]
     }
   ).reservations
@@ -50,7 +50,7 @@ regions.each do |region|
       next
   end
   
-  ec2.describe_instances().reservations.each do |reservation|
+  reservations.each do |reservation|
 
     instance = reservation.instances[0]
 
