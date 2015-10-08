@@ -1,6 +1,19 @@
+#
+# Available variables:
+# $NAME value of the tag with name NAME_TAG_NAME
+# $STAGE value of the tag with name STAGE_TAG_NAME
+# $ADDRESS ip address of the aws instance
+# $PROFILE profile name
+#
+
 export AWS_ACCESS_KEY=
 export AWS_SECRET_KEY=
-export IDENTITY_FILE=
+export AWS_REGIONS=eu-west-1,us-east-1
+export NAME_TAG_NAME=Name
+export STAGE_TAG_NAME=Stage
 export SKIP_REGEXP=
-export <instance_name>.USER=
+export IDENTITY_FILE=
+export HOST_PATTERN=$NAME[$ADDRESS]
+export SHUTTLE_NAME_PATTERN=$PROFILE/$STAGE/$NAME[$ADDRESS]
+export <instance_name>.USER=ubuntu
 
